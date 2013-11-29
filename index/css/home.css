@@ -34,6 +34,8 @@
 .home_second .home_sec_tit li, .home_second .home_sec_tit .tit{width:165px;}
 .home_second .home_sec_tit .tit{font-size:16px;font-family:"微软雅黑";display:inline-block;text-align:center;font-weight:bold;height:34px;line-height:34px;position:absolute;top:-5px;z-index:1;}
 .home_second .home_sec_tit .tit:hover{background:#b28850;}
+.home_second .home_sec_tit .activate{background:#b28850;}
+
 
 .home_second .home_sec_box, .home_second .home_sec_con, .home_second .home_sec_single{height:283px;}
 .home_second .home_sec_box{width:1000px;height:315px;display:inline-block;overflow:hidden;position:relative;}

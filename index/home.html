@@ -122,20 +122,28 @@
         
         <div class="home_second">
             <div class="home_sec_tit">
-               <ul>
-                  <li><a href="javascript:void(0)" class="tit">留心系列</a></li>
-                  <li><a href="javascript:void(0)" class="tit">慕斯系列</a></li>
-                  <li><a href="javascript:void(0)" class="tit">芝士系列</a></li>
-                  <li><a href="javascript:void(0)" class="tit">健康系列</a></li>
-                  <li><a href="javascript:void(0)" class="tit">无糖系列</a></li>
-                  <li style="border:none;"><a href="javascript:void(0)" class="tit">低脂系列</a></li>
+               <ul id="control-btn">
+                  <li><a href="javascript:void(0)" class="tit" id="control-01">留心系列</a></li>
+                  <li><a href="javascript:void(0)" class="tit" id="control-02">慕斯系列</a></li>
+                  <li><a href="javascript:void(0)" class="tit" id="control-03">芝士系列</a></li>
+                  <li><a href="javascript:void(0)" class="tit" id="control-04">健康系列</a></li>
+                  <li><a href="javascript:void(0)" class="tit" id="control-05">无糖系列</a></li>
+                  <li style="border:none;"><a href="javascript:void(0)" class="tit" id="control-06">低脂系列</a></li>
                </ul>
             </div>
             
-            <div class="home_sec_box">
+            <div class="home_sec_box" id="demo-box">
                 <span class="home_sec_btn home_sec_left png" id="prev-01"></span>
                 <span class="home_sec_btn home_sec_right png" id="next-01"></span>
-                <div class="home_sec_con" id="demo-01">         
+                <div class="home_sec_con" id="demo-01" style="display:none;">         
+                    <ul class="home_sec_single" style="display:block;">
+                       <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/14143_1920_250_001-web.jpg"></a></li>
+					   <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/13256_1920_250_002-web.jpg"></a></li>
+					   <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/14143_1920_250_001-web.jpg"></a></li>
+					   <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/14143_1920_250_002-web.jpg"></a></li>
+                    </ul>
+                </div>
+				<div class="home_sec_con" id="demo-02" style="display:none;">         
                     <ul class="home_sec_single" style="display:block;">
                        <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/14143_1920_250_001-web.jpg"></a></li>
 					   <li><a href="#" target="_blank"><img height="283" width="305" alt="" src="http://p0.jmstatic.com/banner/2253/13256_1920_250_002-web.jpg"></a></li>
@@ -146,13 +154,20 @@
             </div>
 			<script>
 				$(document).ready(function(){
-					$('#demo-01').jCarouselLite({
-						btnPrev: '#prev-01',
-						btnNext: '#next-01',
-						visible:3,
-						auto: 800,
-    		            speed: 1000
-					});		
+					$("#control-btn a").click(function(){
+						$("#control-btn a").removeClass("activate");
+						$(this).addClass("activate");
+						$("#demo-box .home_sec_con").hide();
+						$("#demo-"+/[0-9]+/.exec($(this).attr("id"))[0]).show();
+						$('#demo-01').jCarouselLite({
+							btnPrev: '#prev-01',
+							btnNext: '#next-01',
+							visible:3,
+							auto: 800,
+							speed: 1000
+						});
+					})
+				
 				});
 			</script>
             
