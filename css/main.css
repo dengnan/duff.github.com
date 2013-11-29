@@ -1,0 +1,20 @@
+body,ul,li,div{padding:0;margin:0;list-style-type:none;}
+a,img {border:none;}
+.clear {clear:both;display:block;}
+.carousel {width:625px; margin:30px auto;}
+.carousel .prev , .carousel .next {height:23px;width:23px;overflow:hidden;display:block;margin-top:40px;text-decoration:none;cursor:pointer;}
+.carousel .prev {float:left;background:url(images/imageNavLeft.gif) no-repeat;}
+.carousel .next {float:left;background:url(images/imageNavRight.gif) no-repeat;}
+.carousel #prev-03.disabled{background:url(images/imageNavLeft-disabled.gif) no-repeat;cursor:default;}
+.carousel #next-03.disabled{background:url(images/imageNavRight-disabled.gif) no-repeat;cursor:default;}
+
+.jCarouselLite {float:left;width:486px;height:152px;overflow:hidden;/*必要元素*/}
+.jCarouselLite li{height:152px;width:162px;text-align:center;}
+.jCarouselLite li img,.jCarouselLite-01 li img{border:solid 1px #ddd;}
+
+.carousel-01 {width:152px;margin:30px auto;}
+.carousel-01 .prev , .carousel-01 .next {height:23px;width:23px;overflow:hidden;display:block;margin-left:60px;text-decoration:none;cursor:pointer;}
+.carousel-01 .prev {background:url(images/imageNavLeft.gif) no-repeat;}
+.carousel-01 .next {background:url(images/imageNavRight.gif) no-repeat;}
+.jCarouselLite-01 {height:385px;width:152px;overflow:hidden;/*必要元素*/}
+.jCarouselLite-01 li{height:152px;width:152px;text-align:center;padding:5px 0;}
