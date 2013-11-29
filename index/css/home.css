@@ -42,7 +42,7 @@
 .home_second .home_sec_single li{float:left;margin:0 6px;width:305px;height:283px;overflow:hidden;}
 .home_second .home_sec_single li a, .home_second .home_sec_single li a img{width:303px;height:281px;display:block;}
 .home_second .home_sec_single li a{border:1px solid #d6d6d6;}
-.home_second .home_sec_btn{width:70px;height:70px;position:absolute;top:50%;display:inline-block;margin-top:-35px;cursor:pointer;}
+.home_second .home_sec_btn{width:70px;height:70px;position:absolute;top:50%;display:inline-block;margin-top:-35px;cursor:pointer;z-index:3;}
 .home_second .home_sec_left{left:0;background-position:0 -92px;}
 .home_second .home_sec_right{right:0;background-position:0 -162px;}
 
