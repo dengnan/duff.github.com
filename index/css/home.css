@@ -40,7 +40,7 @@
 .home_second .home_sec_box, .home_second .home_sec_con, .home_second .home_sec_single{height:283px;}
 .home_second .home_sec_box{width:1000px;height:315px;display:inline-block;overflow:hidden;position:relative;}
 .home_second .home_sec_con{width:951px;margin:15px auto;overflow:hidden;}
-.home_second .home_sec_single{width:100000px;display:none;overflow:hidden;}
+.home_second .home_sec_single{width:100000px;overflow:hidden;}
 .home_second .home_sec_single li{float:left;margin:0 6px;width:305px;height:283px;overflow:hidden;}
 .home_second .home_sec_single li a, .home_second .home_sec_single li a img{width:303px;height:281px;display:block;}
 .home_second .home_sec_single li a{border:1px solid #d6d6d6;}
