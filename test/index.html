@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-min-1.7.2.js"></script>
+    <script type="text/javascript" src="js/jcarousellite.js"></script>
+  </head>
+  <body>
+      <div class="carousel">
+    <a href="javascript:void(0);" class="prev" id="prev-01">prve</a>
+    <div class="jCarouselLite" id="demo-01" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 324px;">
+      <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 2106px; left: -324px;">
+        <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Chrysanthemum.jpg"></a></li>
+        <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Desert.jpg"></a></li>
+        <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Lighthouse.jpg"></a></li>
+        <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Penguins.jpg"></a></li>
+        <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Tulips.jpg"></a></li>
+      </ul>
+    </div>
+    <a href="javascript:void(0);" class="next" id="next-01">next</a>
+    <div class="clear"></div>   
+  </div>
+  <script>
+  $(document).ready(function(){
+    $('#demo-01').jCarouselLite({
+      btnPrev: '#prev-01',
+      btnNext: '#next-01',
+      visible:3
+    });   
+  });
+  </script>
+  </body>
+</html>
