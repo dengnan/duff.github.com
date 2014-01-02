@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/jquery-min-1.7.2.js"></script>
     <script type="text/javascript" src="js/jcarousellite.js"></script>
+	<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46807023-1']);
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </head>
   <body>
       <div class="carousel">
-    <a href="javascript:void(0);" class="prev" id="prev-01">prve</a>
+    <a href="javascript:void(0);" class="prev" id="prev-01" onClick="_gaq.push(['_trackEvent', 'Videos', 'Play1', 'Baby\'s First Birthday']);">prve</a>
     <div class="jCarouselLite" id="demo-01" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 324px;">
       <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 2106px; left: -324px;">
         <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Chrysanthemum.jpg"></a></li>
@@ -20,7 +33,7 @@
         <li style="overflow: hidden; float: left; width: 162px; height: 152px;"><a href="#" target="_blank"><img height="150" width="150" alt="" src="img/Tulips.jpg"></a></li>
       </ul>
     </div>
-    <a href="javascript:void(0);" class="next" id="next-01">next</a>
+    <a href="javascript:void(0);" class="next" id="next-01" onClick="_gaq.push(['_trackEvent', 'Videos', 'Play2', 'Baby\'s First Birthday']);">next</a>
     <div class="clear"></div>   
   </div>
   <script>
@@ -32,15 +45,5 @@
     });   
   });
   </script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46807023-1', 'github.com');
-  ga('send', 'pageview');
-
-</script>
   </body>
 </html>
