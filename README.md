@@ -1,2 +1,1 @@
-# dengnan.github.com
-zhixiao blog
+Duff blog
